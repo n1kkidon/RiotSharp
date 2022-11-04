@@ -14,6 +14,7 @@ using RiotSharp.Endpoints.StaticDataEndpoint;
 using RiotSharp.Endpoints.StatusEndpoint;
 using RiotSharp.Endpoints.SummonerEndpoint;
 using RiotSharp.Endpoints.ThirdPartyEndpoint;
+using RiotSharp.Endpoints.ChallengesEndpoint;
 using RiotSharp.Http;
 using RiotSharp.Http.Interfaces;
 using RiotSharp.Interfaces;
@@ -42,6 +43,8 @@ namespace RiotSharp
 
         /// <inheritdoc />
         public IChampionEndpoint Champion { get; }
+
+        public IChallengesEndpoint Challenges { get; }
 
         /// <inheritdoc />
         public ILeagueEndpoint League { get; }
@@ -138,6 +141,7 @@ namespace RiotSharp
             Account = new AccountEndpoint(requester);
             Summoner = new SummonerEndpoint(requester, _cache);
             Champion = new ChampionEndpoint(requester);
+            Challenges = new ChallengesEndpoint(requester);
             League = new LeagueEndpoint(requester);
             Match = new MatchEndpoint(requester, _cache);
             Spectator = new SpectatorEndpoint(requester);
@@ -174,6 +178,7 @@ namespace RiotSharp
             Account = new AccountEndpoint(rateLimitedRequester);
             Summoner = new SummonerEndpoint(rateLimitedRequester, _cache);
             Champion = new ChampionEndpoint(rateLimitedRequester);
+            Challenges = new ChallengesEndpoint(rateLimitedRequester);
             League = new LeagueEndpoint(rateLimitedRequester);
             Match = new MatchEndpoint(rateLimitedRequester, _cache);
             Spectator = new SpectatorEndpoint(rateLimitedRequester);

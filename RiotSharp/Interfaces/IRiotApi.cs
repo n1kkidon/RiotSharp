@@ -14,6 +14,11 @@ namespace RiotSharp.Interfaces
         IAccountEndpoint Account { get; }
 
         /// <summary>
+        /// The Challenges Endpoint.
+        /// </summary>
+        IChallengesEndpoint Challenges { get; }
+
+        /// <summary>
         /// The Summoner Endpoint.
         /// </summary>
         ISummonerEndpoint Summoner { get; }
