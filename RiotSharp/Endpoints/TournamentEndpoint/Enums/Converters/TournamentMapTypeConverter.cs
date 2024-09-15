@@ -35,7 +35,7 @@ namespace RiotSharp.Endpoints.TournamentEndpoint.Enums.Converters
 
         public override void WriteJson(JsonWriter writer, object value, JsonSerializer serializer)
         {
-            var map = (TournamentMapType) value;
+            var map = (TournamentMapType)value;
             string result;
             switch (map)
             {

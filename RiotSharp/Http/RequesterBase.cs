@@ -116,7 +116,8 @@ namespace RiotSharp.Http
                         var obj = JObject.Parse(json);
                         message = obj["status"]["message"].ToObject<string>();
                     }
-                    catch {
+                    catch
+                    {
                         message = response.StatusCode.ToString();
                     }
                     throw new RiotSharpException(message, response.StatusCode);

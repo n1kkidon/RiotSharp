@@ -16,7 +16,7 @@ namespace RiotSharp.Endpoints.ClashEndpoint.Enums.Converters
         {
             var token = JToken.Load(reader);
             var value = token.Value<string>();
-            
+
             switch (value)
             {
                 case "CAPTAIN":

@@ -6,7 +6,7 @@
     public class StatsStatic
     {
         internal StatsStatic() { }
-        
+
         /// <summary>
         /// Flat Armor value for the object.
         /// </summary>
@@ -16,7 +16,7 @@
         /// Flat Attack Speed value for the object.
         /// </summary>
         public double FlatAttackSpeedMod { get; set; }
-        
+
         /// <summary>
         /// Flat Block value for the object.
         /// </summary>

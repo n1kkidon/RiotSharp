@@ -19,7 +19,7 @@ namespace RiotSharp.Http.Interfaces
         /// Thrown if an Http error occurs. 
         /// Contains the Http error code and error message.
         /// </exception>
-        Task<string> CreateGetRequestAsync(string relativeUrl, Region region, List<string> queryParameters = null, 
+        Task<string> CreateGetRequestAsync(string relativeUrl, Region region, List<string> queryParameters = null,
             bool useHttps = true);
 
         /// <summary>

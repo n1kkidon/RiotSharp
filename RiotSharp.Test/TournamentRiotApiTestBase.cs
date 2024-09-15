@@ -6,17 +6,17 @@ using RiotSharp.Endpoints.TournamentEndpoint.Enums;
 namespace RiotSharp.Test
 {
     public class TournamentRiotApiTestBase : CommonTestBase
-    {    
+    {
         public static string TournamentApiKey = Configuration["TournamentApiKey"];
         public static Region TournamentRegion = (Region)Enum.Parse(typeof(Region), "euw");
         public static string TournamentName = "RiotSharp.TestTournament";
         public static string TournamentUrl = "http://example.com";
 
-        public static TournamentSpectatorType tournamentSpectatorType = 
+        public static TournamentSpectatorType tournamentSpectatorType =
             (TournamentSpectatorType)Enum.Parse(typeof(TournamentSpectatorType), "All");
-        public static TournamentPickType tournamentPickType = 
+        public static TournamentPickType tournamentPickType =
             (TournamentPickType)Enum.Parse(typeof(TournamentPickType), "TournamentDraft");
-        public static TournamentMapType tournamentMapType = 
+        public static TournamentMapType tournamentMapType =
             (TournamentMapType)Enum.Parse(typeof(TournamentMapType), "SummonersRift");
 
         protected static readonly TournamentRiotApi api = TournamentRiotApi.GetInstance(TournamentApiKey, useStub: true);

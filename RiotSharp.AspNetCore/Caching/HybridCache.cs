@@ -68,7 +68,7 @@ namespace RiotSharp.AspNetCore.Caching
             {
                 _usedKeys.Add(key);
                 _memoryCache.Set(key, output, _slidingExpiry);
-            }               
+            }
             return output;
         }
 

@@ -31,7 +31,7 @@ namespace RiotSharp.Http
         #region Public Methods
 
         /// <inheritdoc />
-        public Task<string> CreateGetRequestAsync(string relativeUrl, Region region, List<string> queryParameters = null, 
+        public Task<string> CreateGetRequestAsync(string relativeUrl, Region region, List<string> queryParameters = null,
             bool useHttps = true)
         {
             var host = GetPlatformHost(region);
@@ -66,7 +66,7 @@ namespace RiotSharp.Http
                 var response = await SendAsync(request).ConfigureAwait(false);
                 response.Dispose();
                 return true;
-                
+
             }
             catch (RiotSharpException)
             {

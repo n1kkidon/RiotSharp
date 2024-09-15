@@ -27,12 +27,12 @@ namespace RiotSharp.Endpoints.ClashEndpoint
         private const string ClashTournamentListCacheKey = "clash-tournaments-{0}";
         private const string ClashTournamentByTeamCacheKey = "clash-tournament-by-team-{0}-{1}";
         private const string ClashTournamentByIdCacheKey = "clash-tournament-by-id-{0}-{1}";
-        
+
         private static readonly TimeSpan ClashPlayersTtl = TimeSpan.FromDays(5);
 
         private readonly IRateLimitedRequester _requester;
         private readonly ICache _cache;
-        
+
         /// <summary>
         /// Creates a Clash Endpoint
         /// </summary>
@@ -54,18 +54,18 @@ namespace RiotSharp.Endpoints.ClashEndpoint
             {
                 return cachePLayerList;
             }
-            
+
             var json = await _requester
                 .CreateGetRequestAsync(ClashRootUrl + string.Format(ClashPlayersBySummonerId, summonerId), region)
                 .ConfigureAwait(false);
-            
+
             var clashPlayers = JsonConvert.DeserializeObject<List<ClashPlayer>>(json);
             _cache.Add(cacheKey, clashPlayers, ClashPlayersTtl);
 
             return clashPlayers;
         }
 
-        
+
         /// <inheritdoc />
         public async Task<ClashTeam> GetClashTeamByTeamIdAsync(Region region, string teamId)
         {
@@ -85,7 +85,7 @@ namespace RiotSharp.Endpoints.ClashEndpoint
 
             return clashTeam;
         }
-        
+
         /// <inheritdoc />
         public async Task<List<ClashTournament>> GetClashTournamentListAsync(Region region)
         {
@@ -105,7 +105,7 @@ namespace RiotSharp.Endpoints.ClashEndpoint
 
             return tournaments;
         }
-        
+
         /// <inheritdoc />
         public async Task<ClashTournament> GetClashTournamentByTeamAsync(Region region, string teamId)
         {

@@ -47,7 +47,7 @@ namespace RiotSharp.Endpoints.ClashEndpoint.Models
         /// </summary>
         [JsonProperty("abbreviation")]
         public string Abbreviation { get; set; }
-        
+
         /// <summary>
         /// List containing infos about team players
         /// </summary>

@@ -57,7 +57,7 @@ namespace RiotSharp.Interfaces
         /// The Data Dragon Endpoint.
         /// </summary>
         IDataDragonEndpoints DataDragon { get; }
-        
+
         /// <summary>
         /// The Clash Endpoint
         /// </summary>

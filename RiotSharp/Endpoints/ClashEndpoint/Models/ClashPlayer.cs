@@ -13,19 +13,19 @@ namespace RiotSharp.Endpoints.ClashEndpoint.Models
         /// </summary>
         [JsonProperty("summonerId")]
         public string SummonerId { get; set; }
-        
+
         /// <summary>
         /// Clash Team Id
         /// </summary>
         [JsonProperty("teamId")]
         public string TeamId { get; set; }
-        
+
         /// <summary>
         /// Position In a game
         /// </summary>
         [JsonProperty("position")]
         public PositionType Position { get; set; }
-        
+
         /// <summary>
         /// hierarchy role in the team
         /// </summary>

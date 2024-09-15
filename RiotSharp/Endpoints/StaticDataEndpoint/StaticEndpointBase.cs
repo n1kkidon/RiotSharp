@@ -37,7 +37,7 @@ namespace RiotSharp.Endpoints.StaticDataEndpoint
             this.cache = cache;
             this.useHttps = useHttps;
 
-            this.SlidingExpirationTime = slidingExpirationTime ?? DefaultSlidingExpirationTime;   
+            this.SlidingExpirationTime = slidingExpirationTime ?? DefaultSlidingExpirationTime;
         }
 
         /// <summary>

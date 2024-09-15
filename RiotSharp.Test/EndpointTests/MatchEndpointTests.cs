@@ -37,11 +37,11 @@ namespace RiotSharp.Test.EndpointTests
             var matchList = _matchEndpoint.GetMatchListAsync(Region.Euw, "SummonerId").Result;
 
             Assert.IsNotNull(matchList);
-            foreach(var matchId in matchList)
+            foreach (var matchId in matchList)
             {
                 Assert.IsTrue(matchId.StartsWith("EUW1_"));
             }
         }
-        
+
     }
 }

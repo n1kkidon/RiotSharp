@@ -13,32 +13,32 @@ namespace RiotSharp.Endpoints.ClashEndpoint.Enums
         /// Player Hasn't Specified His/Her position yet
         /// </summary>
         Unselected,
-        
+
         /// <summary>
         /// Fill position
         /// </summary>
         Fill,
-        
+
         /// <summary>
         /// position Top lane
         /// </summary>
         Top,
-        
+
         /// <summary>
         /// position Jungle
         /// </summary>
         Jungle,
-        
+
         /// <summary>
         /// position Mid lane
         /// </summary>
         Middle,
-        
+
         /// <summary>
         /// position Bot/Marksman/ADC
         /// </summary>
         Bottom,
-        
+
         /// <summary>
         /// position Utility/Support
         /// </summary>

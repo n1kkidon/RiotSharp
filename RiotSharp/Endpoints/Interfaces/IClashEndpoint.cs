@@ -20,7 +20,7 @@ namespace RiotSharp.Endpoints.Interfaces
         /// <returns>A List of currently active clash players</returns>
         Task<List<ClashPlayer>> GetClashPlayersBySummonerIdAsync(Region region, string summonerId);
 
-        
+
         /// <summary>
         /// Gets Clash Team By Team Id
         /// Returned Object also contains info about all team players
@@ -29,14 +29,14 @@ namespace RiotSharp.Endpoints.Interfaces
         /// <param name="teamId">Clash team id</param>
         /// <returns>Returns Clash Team model object containing all team info</returns>
         Task<ClashTeam> GetClashTeamByTeamIdAsync(Region region, string teamId);
-        
+
         /// <summary>
         /// Returns a list of active and upcoming tournaments in specified region.
         /// </summary>
         /// <param name="region">Region in which the tournaments are held</param>
         /// <returns>Return a list of tournament entity models</returns>
         Task<List<ClashTournament>> GetClashTournamentListAsync(Region region);
-        
+
         /// <summary>
         /// Returns a active or upcoming tournament for specified team.
         /// </summary>
@@ -44,7 +44,7 @@ namespace RiotSharp.Endpoints.Interfaces
         /// <param name="teamId">Team Id for which the tournament entity is fetched</param>
         /// <returns>Return a tournament entity model</returns>
         Task<ClashTournament> GetClashTournamentByTeamAsync(Region region, string teamId);
-        
+
         /// <summary>
         /// Returns a active or upcoming tournament by its Id.
         /// </summary>

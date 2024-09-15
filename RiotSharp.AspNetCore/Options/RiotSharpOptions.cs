@@ -25,7 +25,7 @@ namespace RiotSharp.AspNetCore.Options
                 [TimeSpan.FromMinutes(10)] = 500
             };
         }
-        
+
         public ApiKeyOptions RiotApi { get; set; }
         public TournamentApiKeyOptions TournamentApi { get; set; }
     }

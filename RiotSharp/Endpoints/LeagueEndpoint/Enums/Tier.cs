@@ -25,6 +25,11 @@ namespace RiotSharp.Endpoints.LeagueEndpoint.Enums
         Diamond,
 
         /// <summary>
+        /// Emerald tier.
+        /// </summary>
+        Emerald,
+
+        /// <summary>
         /// Platinum tier.
         /// </summary>
         Platinum,
@@ -48,7 +53,7 @@ namespace RiotSharp.Endpoints.LeagueEndpoint.Enums
         /// Iron tier.
         /// </summary>
         Iron,
-        
+
         /// <summary>
         /// Unranked.
         /// </summary>

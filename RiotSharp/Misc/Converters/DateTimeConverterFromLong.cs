@@ -16,7 +16,7 @@ namespace RiotSharp.Misc.Converters
             JsonSerializer serializer)
         {
             JToken token = JToken.Load(reader);
-            if(token.Value<long?>() != null)
+            if (token.Value<long?>() != null)
             {
                 return token.Value<long>().ToDateTimeFromMilliSeconds();
             }

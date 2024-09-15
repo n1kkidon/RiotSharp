@@ -155,8 +155,8 @@ namespace RiotSharp
         /// <inheritdoc />
         /// <exception cref="T:System.ArgumentException">Thrown if an invalid <paramref name="teamSize" /> or an invalid <paramref name="count" /> is provided.</exception>
         public async Task<List<string>> CreateTournamentCodesAsync(int tournamentId, int count, int teamSize,
-            TournamentSpectatorType spectatorType, TournamentPickType pickType, 
-            TournamentMapType mapType, List<string> allowedEncryptedSummonerIds = null,  string metadata = null)
+            TournamentSpectatorType spectatorType, TournamentPickType pickType,
+            TournamentMapType mapType, List<string> allowedEncryptedSummonerIds = null, string metadata = null)
         {
             ValidateTeamSize(teamSize);
             ValidateTournamentCodeCount(count);
@@ -170,7 +170,7 @@ namespace RiotSharp
                 { "metadata", metadata }
             };
             var json = await _requester.CreatePostRequestAsync(_tournamentRootUrl + CreateCodesUrl, Region.Americas,
-                JsonConvert.SerializeObject(body, null, 
+                JsonConvert.SerializeObject(body, null,
                     new JsonSerializerSettings
                     {
                         NullValueHandling = NullValueHandling.Ignore

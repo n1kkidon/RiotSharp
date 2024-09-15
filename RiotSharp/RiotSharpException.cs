@@ -6,7 +6,7 @@ namespace RiotSharp
     /// <summary>
     /// RiotSharp exception.
     /// </summary>
-    public class RiotSharpException: Exception
+    public class RiotSharpException : Exception
     {
         /// <summary>HTTP error code returned by the Riot API, causing this exception.</summary>
         public readonly HttpStatusCode HttpStatusCode;

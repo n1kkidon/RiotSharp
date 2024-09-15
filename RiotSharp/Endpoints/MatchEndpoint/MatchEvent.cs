@@ -108,7 +108,7 @@ namespace RiotSharp.Endpoints.MatchEndpoint
         /// The level up type of the event. Only present if relevant.
         /// </summary>
         [JsonProperty("level")]
-        public int Level{ get; set; }
+        public int Level { get; set; }
 
         /// <summary>
         /// The level up type of the event. Only present if relevant.

@@ -64,7 +64,7 @@ namespace RiotSharp.Endpoints.TournamentEndpoint
         /// </summary>
         [JsonProperty("timeline")]
         public ParticipantTimeline Timeline { get; set; }
-        
+
         /// <summary>
         /// Highest achieved season tier.
         /// </summary>

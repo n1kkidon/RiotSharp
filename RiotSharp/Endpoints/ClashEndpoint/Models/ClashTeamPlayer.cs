@@ -19,7 +19,7 @@ namespace RiotSharp.Endpoints.ClashEndpoint.Models
         /// </summary>
         [JsonProperty("position")]
         public PositionType Position { get; set; }
-        
+
         /// <summary>
         /// hierarchy role in the team
         /// </summary>

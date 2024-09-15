@@ -35,7 +35,7 @@ namespace RiotSharp.Endpoints.TournamentEndpoint.Enums.Converters
 
         public override void WriteJson(JsonWriter writer, object value, JsonSerializer serializer)
         {
-            var pickType = (TournamentPickType) value;
+            var pickType = (TournamentPickType)value;
             string result;
             switch (pickType)
             {

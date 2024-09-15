@@ -63,7 +63,7 @@ namespace RiotSharp
 
         /// <inheritdoc />
         public IDataDragonEndpoints DataDragon { get; }
-        
+
         ///<inheritdoc cref="Clash"/>
         public IClashEndpoint Clash { get; }
 
@@ -150,7 +150,7 @@ namespace RiotSharp
 
             DataDragon = new DataDragonEndpoints(Requesters.StaticApiRequester, _cache);
             Status = new StatusEndpoint(Requesters.StaticApiRequester);
-            
+
             Clash = new ClashEndpoint(requester, _cache);
         }
 
@@ -168,7 +168,7 @@ namespace RiotSharp
         public RiotApi(IRateLimitedRequester rateLimitedRequester, IRequester requester, IStaticEndpointProvider staticEndpointProvider,
             ICache cache = null)
         {
-            if(rateLimitedRequester == null)
+            if (rateLimitedRequester == null)
                 throw new ArgumentNullException(nameof(rateLimitedRequester));
             if (staticEndpointProvider == null)
                 throw new ArgumentNullException(nameof(staticEndpointProvider));
@@ -187,7 +187,7 @@ namespace RiotSharp
 
             DataDragon = new DataDragonEndpoints(staticEndpointProvider);
             Status = new StatusEndpoint(requester);
-            
+
             Clash = new ClashEndpoint(rateLimitedRequester, _cache);
         }
     }

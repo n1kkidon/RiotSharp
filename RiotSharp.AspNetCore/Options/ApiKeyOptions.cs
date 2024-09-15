@@ -9,7 +9,8 @@ namespace RiotSharp.AspNetCore.Options
     /// </summary>
     public class ApiKeyOptions
     {
-        internal ApiKeyOptions() {
+        internal ApiKeyOptions()
+        {
             CacheType = CacheType.PassThrough;
         }
 

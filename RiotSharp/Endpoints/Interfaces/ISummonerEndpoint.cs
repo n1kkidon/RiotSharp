@@ -1,4 +1,5 @@
-﻿using System.Threading.Tasks;
+﻿using System;
+using System.Threading.Tasks;
 using RiotSharp.Endpoints.SummonerEndpoint;
 using RiotSharp.Misc;
 
@@ -31,6 +32,7 @@ namespace RiotSharp.Endpoints.Interfaces
         /// <param name="region">Region in which you wish to look for a summoner.</param>
         /// <param name="summonerName">Name of the summoner you're looking for.</param>
         /// <returns>A summoner.</returns>
+        [Obsolete("Summoner names are deprecated, use puuid instead. You can get one from account endpoint using RiotId.")]
         Task<Summoner> GetSummonerByNameAsync(Region region, string summonerName);
 
         /// <summary>

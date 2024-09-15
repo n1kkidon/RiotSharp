@@ -18,7 +18,7 @@ namespace RiotSharp.Test
                 var providerId = api.CreateProviderAsync(TournamentRegion, TournamentUrl).Result;
                 var tournamentId = api.CreateTournamentAsync(providerId, TournamentName).Result;
                 Assert.AreNotEqual(0, tournamentId);
-                var tournamentCodes = api.CreateTournamentCodesAsync(tournamentId, 2, 5, 
+                var tournamentCodes = api.CreateTournamentCodesAsync(tournamentId, 2, 5,
                     tournamentSpectatorType,
                     tournamentPickType, tournamentMapType).Result;
                 Assert.AreEqual(2, tournamentCodes.Count);

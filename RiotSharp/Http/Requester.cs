@@ -33,7 +33,7 @@ namespace RiotSharp.Http
         }
 
         /// <inheritdoc />
-        public async Task<string> CreateGetRequestAsync(string host, string relativeUrl, 
+        public async Task<string> CreateGetRequestAsync(string host, string relativeUrl,
             List<string> queryParameters = null, bool useHttps = true)
         {
             var request = PrepareRequest(host, relativeUrl, queryParameters, useHttps, HttpMethod.Get);

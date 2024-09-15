@@ -32,4 +32,4 @@ namespace RiotSharp.AspNetCore.Caching
             return JsonConvert.DeserializeObject<T>(unserializedValue);
         }
     }
-}   
+}

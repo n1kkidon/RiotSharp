@@ -21,7 +21,7 @@ namespace RiotSharp.Endpoints.StaticDataEndpoint.SummonerSpell
 
         /// <inheritdoc />
         public StaticSummonerSpellEndpoint(IRequester requester, ICache cache, TimeSpan? slidingExpirationTime)
-            :base(requester, cache, slidingExpirationTime) { }
+            : base(requester, cache, slidingExpirationTime) { }
 
         /// <inheritdoc />
         public StaticSummonerSpellEndpoint(IRequester requester, ICache cache)

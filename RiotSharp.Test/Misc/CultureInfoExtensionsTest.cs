@@ -21,7 +21,7 @@ namespace RiotSharp.Test.Misc
             { Language.ro_RO, new CultureInfo("ro") }, { Language.ru_RU, new CultureInfo("ru") },
             { Language.th_TH, new CultureInfo("th") }, { Language.tr_TR, new CultureInfo("tr") },
             { Language.vn_VN, new CultureInfo("vn") }, { Language.zh_CN, new CultureInfo("zh") },
-           
+
         };
         private static Dictionary<Language, CultureInfo> directlySupportedCultureInfos = new Dictionary<Language, CultureInfo>
         {
@@ -47,8 +47,8 @@ namespace RiotSharp.Test.Misc
         [TestMethod]
         public void ToLanguage_SupportedNeutralCultureInfo_ReturnLanguage()
         {
-            foreach(var supportedNeutralCulture in supportedNeutralCultureInfos)
-            {               
+            foreach (var supportedNeutralCulture in supportedNeutralCultureInfos)
+            {
                 // Act
                 var language = supportedNeutralCulture.Value.ToLanguage();
 

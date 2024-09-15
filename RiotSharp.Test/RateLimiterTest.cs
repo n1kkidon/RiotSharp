@@ -80,8 +80,9 @@ namespace RiotSharp.Test
         [Timeout(1000 * 10 * 3)]
         public async Task WhenAll_ManyRequestsAsync_ReturnTasks()
         {
-            var tasks = Enumerable.Range(0, Limit*3).Select(i => RateLimiter.HandleRateLimitAsync()
-                .ContinueWith(task => {
+            var tasks = Enumerable.Range(0, Limit * 3).Select(i => RateLimiter.HandleRateLimitAsync()
+                .ContinueWith(task =>
+                {
                     AssertDelayed(TimeSpan.FromTicks(i / Limit * TenSeconds.Ticks), i);
                 })).ToList();
 
@@ -127,7 +128,7 @@ namespace RiotSharp.Test
         {
             var expectedDelayed = TimeSpan.FromTicks(TenSeconds.Ticks * 2);
             // delayed tasks first, just for fun
-            var tasks = Enumerable.Range(Limit*2, Limit).Select(i => Task.Delay(expectedDelayed)
+            var tasks = Enumerable.Range(Limit * 2, Limit).Select(i => Task.Delay(expectedDelayed)
                 .ContinueWith(task => RateLimiter.HandleRateLimitAsync())
                 .ContinueWith(task =>
                 {
@@ -179,9 +180,10 @@ namespace RiotSharp.Test
         public async Task WhenAll_MultipleManyRequests15InlineAsync_ReturnTasks()
         {
             // order is more random, so we keep track of each group instead
-            int[] counts = {0, 0, 0};
+            int[] counts = { 0, 0, 0 };
             // first 5 requests
-            var tasks = Enumerable.Range(0, 5).Select(async i => {
+            var tasks = Enumerable.Range(0, 5).Select(async i =>
+            {
                 await RateLimiter.HandleRateLimitAsync();
                 counts[Stopwatch.Elapsed.Seconds / 10]++;
             }).ToList();
@@ -237,12 +239,12 @@ namespace RiotSharp.Test
             }
         }
 
-        private void AssertDelayed(TimeSpan expected, int i=0)
+        private void AssertDelayed(TimeSpan expected, int i = 0)
         {
             var actual = Stopwatch.Elapsed;
             Assert.IsTrue(expected < actual,
                 $"{i} too soon. Expected: {expected}. Actual: {actual}.");
-            Assert.IsTrue(actual < TimeSpan.FromTicks((int) (expected.Ticks * ErrorFactor + ErrorDelay.Ticks)),
+            Assert.IsTrue(actual < TimeSpan.FromTicks((int)(expected.Ticks * ErrorFactor + ErrorDelay.Ticks)),
                 $"{i} too late. Expected: {expected}. Actual: {actual}.");
         }
     }

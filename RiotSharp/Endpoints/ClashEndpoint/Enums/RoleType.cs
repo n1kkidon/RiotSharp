@@ -15,7 +15,7 @@ namespace RiotSharp.Endpoints.ClashEndpoint.Enums
         /// Clash team captain
         /// </summary>
         Captain,
-        
+
         /// <summary>
         /// Clash team Member
         /// </summary>

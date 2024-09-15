@@ -47,7 +47,7 @@ namespace RiotSharp.Endpoints.StaticDataEndpoint.LanguageStrings
             var json = await requester.CreateGetRequestAsync(Host, CreateUrl(version, language, LanguageStringsDataKey)).ConfigureAwait(false);
             var languageStrings = JsonConvert.DeserializeObject<LanguageStringsStatic>(json);
 
-            cache.Add(cacheKey, new LanguageStringsStaticWrapper(languageStrings, language, version), 
+            cache.Add(cacheKey, new LanguageStringsStaticWrapper(languageStrings, language, version),
                 SlidingExpirationTime);
 
             return languageStrings;

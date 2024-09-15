@@ -27,6 +27,9 @@ namespace RiotSharp.Endpoints.MatchEndpoint
         [JsonProperty("dragon")]
         public TeamStatsObjective Dragon { get; set; }
 
+        [JsonProperty("horde")]
+        public TeamStatsObjective Horde { get; set; }
+
         /// <summary>
         /// Inhibitor objective.
         /// </summary>

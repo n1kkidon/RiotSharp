@@ -13,7 +13,7 @@ namespace RiotSharp.AspNetCore
         /// <summary>
         /// Disable caching
         /// </summary>
-        PassThrough, 
+        PassThrough,
         /// <summary>
         /// Use RiotSharp's internal cache implementation for caching. (Not recommended)
         /// </summary>

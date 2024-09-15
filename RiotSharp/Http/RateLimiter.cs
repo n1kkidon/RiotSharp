@@ -74,11 +74,11 @@ namespace RiotSharp.Http
 
             // Check if we are at the rate limit, find the longest delay.
             var delay = TimeSpan.Zero;
-            
+
             // RetryAfter delay.
             var retryDelay = _retryAfter - now;
             if (retryDelay > delay)
-                delay = (TimeSpan) retryDelay;
+                delay = (TimeSpan)retryDelay;
 
             // Rate limits.
             foreach (var rateLimitCount in _rateLimitCounts)

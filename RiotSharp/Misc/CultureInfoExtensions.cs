@@ -17,7 +17,7 @@ namespace RiotSharp.Misc
         public static Language ToLanguage(this CultureInfo cultureInfo)
         {
             // Neutral cultures don't have an equivalent in Riot's API, therefore they need to be mapped to a default
-            if (cultureInfo.IsNeutralCulture) 
+            if (cultureInfo.IsNeutralCulture)
             {
                 return ParseNeutralCulture(cultureInfo);
             }
@@ -39,7 +39,7 @@ namespace RiotSharp.Misc
                 case "el":
                     return Language.el_GR;
                 case "en":
-                    return Language.en_US;                
+                    return Language.en_US;
                 case "es":
                     return Language.es_ES;
                 case "fr":

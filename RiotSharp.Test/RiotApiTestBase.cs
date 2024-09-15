@@ -9,7 +9,7 @@ namespace RiotSharp.Test
     {
         public static string GameId = "NA1_4078611790";
         public static int ChampionId = 38;
-        public static Platform Summoner1Platform = (Platform) Enum.Parse(typeof(Platform), "NA1");
+        public static Platform Summoner1Platform = (Platform)Enum.Parse(typeof(Platform), "NA1");
         public static int Summoner1MasteryChampionId = 98;
         public static int Summoner1MasteryChampionLevel = 7;
         public static long UnrankedSummonerId = 76723437;
@@ -53,12 +53,12 @@ namespace RiotSharp.Test
         };
 
         public static Region SummonersRegion = Region.Americas;
-        public static Region SummonersPlatform = (Region) Enum.Parse(typeof(Region), "Na");
+        public static Region SummonersPlatform = (Region)Enum.Parse(typeof(Region), "Na");
         public static string Queue = "RANKED_SOLO_5x5";
 
         // Normal 5v5 Draft Pick games
         public static int QueueId = 400;
-        public static Season Season = (Season) Enum.Parse(typeof(Season), "Season2015");
+        public static Season Season = (Season)Enum.Parse(typeof(Season), "Season2015");
         public static readonly string ThirdPartyCode = "test-third-party-code";
     }
 }

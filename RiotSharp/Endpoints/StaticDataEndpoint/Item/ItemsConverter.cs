@@ -18,12 +18,12 @@ namespace RiotSharp.Endpoints.StaticDataEndpoint.Item
         {
             var items = new Dictionary<int, ItemStatic>();
             var itemTokens = JToken.Load(reader);
-            foreach(var itemToken in itemTokens.Children())
+            foreach (var itemToken in itemTokens.Children())
             {
                 var item = itemToken.First.ToObject<ItemStatic>();
                 item.Id = Convert.ToInt32(((JProperty)itemToken).Name);
                 items.Add(item.Id, item);
-            } 
+            }
             return items;
         }
 

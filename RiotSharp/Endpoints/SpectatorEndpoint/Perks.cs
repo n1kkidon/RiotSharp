@@ -26,6 +26,6 @@ namespace RiotSharp.Endpoints.SpectatorEndpoint
         /// IDs of the perks/runes assigned.
         /// </summary>
         [JsonProperty("perkIds")]
-        public List<long> PerkIds { get; set; }      
+        public List<long> PerkIds { get; set; }
     }
 }

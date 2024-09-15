@@ -41,7 +41,7 @@ namespace RiotSharp.AspNetCore.Caching
         public void Clear()
         {
             foreach (var usedKey in _usedKeys)
-            {    
+            {
                 _memoryCache.Remove(usedKey);
                 _usedKeys.Remove(usedKey);
             }

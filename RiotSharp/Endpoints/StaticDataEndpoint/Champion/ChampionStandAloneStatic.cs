@@ -13,7 +13,7 @@ namespace RiotSharp.Endpoints.StaticDataEndpoint.Champion
 
         [JsonProperty("Version")]
         internal string Version { get; set; }
-        
+
         [JsonProperty("data")]
         internal Dictionary<string, ChampionStatic> Data { get; set; }
     }

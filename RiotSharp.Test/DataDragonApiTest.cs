@@ -104,7 +104,7 @@ namespace RiotSharp.Test
                 var itemsJson = JsonConvert.SerializeObject(itemsSample);
                 var items = JsonConvert.DeserializeObject<Endpoints.StaticDataEndpoint.Item.ItemListStatic>(itemsJson);
                 var item = items.Items.First();
-                
+
                 // Assert
                 Assert.AreEqual(itemsSample.Items.Count, items.Items.Count);
                 Assert.AreEqual(itemSample.Value.Id, item.Value.Id);
@@ -167,7 +167,7 @@ namespace RiotSharp.Test
         {
             await EnsureCredibilityAsync(async () =>
             {
-                var masteries = await _api.Masteries.GetAllAsync(LegacyVersion); 
+                var masteries = await _api.Masteries.GetAllAsync(LegacyVersion);
                 Assert.IsTrue(masteries.Masteries.Count > 0);
             });
         }

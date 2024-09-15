@@ -56,7 +56,7 @@ namespace RiotSharp.Interfaces
         /// <param name="tournamentCode">The tournament code in string format.</param>
         /// <returns>TournamentCodeDetail object with details of the tournament code.</returns>
         Task<TournamentCodeDetail> GetTournamentCodeDetailsAsync(string tournamentCode);
-        
+
         /// <summary>
         ///     Gets a list of lobby events by tournament code.
         /// </summary>
@@ -75,7 +75,7 @@ namespace RiotSharp.Interfaces
         /// /// <returns>Success value.</returns>
         Task<bool> UpdateTournamentCodeAsync(string tournamentCode, List<string> allowedEncryptedSummonerIds,
             TournamentSpectatorType? spectatorType, TournamentPickType? pickType, TournamentMapType? mapType);
-        
+
         /// <summary>
         ///     Retrieve match by match ID and tournament code.
         /// </summary>

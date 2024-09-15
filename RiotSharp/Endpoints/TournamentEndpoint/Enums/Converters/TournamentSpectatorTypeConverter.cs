@@ -33,7 +33,7 @@ namespace RiotSharp.Endpoints.TournamentEndpoint.Enums.Converters
 
         public override void WriteJson(JsonWriter writer, object value, JsonSerializer serializer)
         {
-            var spectatorType = (TournamentSpectatorType) value;
+            var spectatorType = (TournamentSpectatorType)value;
             string result;
             switch (spectatorType)
             {

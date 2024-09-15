@@ -55,7 +55,7 @@ namespace RiotSharp.Endpoints.ChallengesEndpoint
         {
             string level = Enum.GetName(typeof(Rank), rank).ToUpper();
             var args = new List<string>();
-            if(limit != null)
+            if (limit != null)
                 args.Add($"limit={Math.Abs(limit.Value)}");
             var json = await _requester.CreateGetRequestAsync(ChallengesRootUrl + string.Format(TopPlayersByLevel, id, level), region, args);
             return JsonConvert.DeserializeObject<List<SummonerLeaderboardPosition>>(json);

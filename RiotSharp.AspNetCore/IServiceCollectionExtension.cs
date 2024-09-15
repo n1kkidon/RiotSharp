@@ -63,7 +63,7 @@ namespace RiotSharp.AspNetCore
 
         private static void AddCache(IServiceCollection serviceCollection, RiotSharpOptions options)
         {
-            switch(options.RiotApi.CacheType)
+            switch (options.RiotApi.CacheType)
             {
                 case CacheType.None:
                     break;

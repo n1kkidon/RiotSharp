@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using Newtonsoft.Json;
+using RiotSharp.Endpoints.ChallengesEndpoint;
 using RiotSharp.Endpoints.LeagueEndpoint.Enums;
 using RiotSharp.Misc;
 using RiotSharp.Misc.Converters;
@@ -13,6 +14,12 @@ namespace RiotSharp.Endpoints.MatchEndpoint
     public class Participant
     {
         internal Participant() { }
+
+        [JsonProperty("allInPings")]
+        public long AllInPings { get; set; }
+
+        [JsonProperty("assistMePings")]
+        public long AssistMePings { get; set; }
 
         /// <summary>
         /// Number of assists.
@@ -56,6 +63,9 @@ namespace RiotSharp.Endpoints.MatchEndpoint
         [JsonProperty("championName")]
         public string ChampionName { get; set; }
 
+        [JsonProperty("commandPings")]
+        public long CommandPings { get; set; }
+
         /// <summary>
         /// Champion Transformation.
         /// </summary>
@@ -67,6 +77,9 @@ namespace RiotSharp.Endpoints.MatchEndpoint
         /// </summary>
         [JsonProperty("consumablesPurchased")]
         public long ConsumablesPurchased { get; set; }
+
+        [JsonProperty("challenges")]
+        public ParticipantChallenges Challenges { get; set; }
 
         /// <summary>
         /// Damage dealt to buildings.
@@ -116,6 +129,15 @@ namespace RiotSharp.Endpoints.MatchEndpoint
         [JsonProperty("dragonKills")]
         public long DragonKills { get; set; }
 
+        [JsonProperty("eligibleForProgression")]
+        public bool EligibleForProgression { get; set; }
+
+        [JsonProperty("enemyMissingPings")]
+        public long EnemyMissingPings { get; set; }
+
+        [JsonProperty("enemyVisionPings")]
+        public long EnemyVisionPings { get; set; }
+
         /// <summary>
         /// Flag indicating if participant got an assist on first blood.
         /// </summary>
@@ -131,14 +153,14 @@ namespace RiotSharp.Endpoints.MatchEndpoint
         /// <summary>
         /// Flag indicating if participant got an assist on first blood turret.
         /// </summary>
-        [JsonProperty("firstBloodTurretAssist")]
-        public bool FirstBloodTurretAssist { get; set; }
+        [JsonProperty("firstTowerAssist")]
+        public bool FirstTowerAssist { get; set; }
 
         /// <summary>
         /// Flag indicating if participant got first blood turret.
         /// </summary>
-        [JsonProperty("firstBloodTurretKill")]
-        public bool FirstBloodTurretKill { get; set; }
+        [JsonProperty("firstTowerKill")]
+        public bool FirstTowerKill { get; set; }
 
         /// <summary>
         /// Flag indicating if game ended in early surrender.
@@ -151,6 +173,12 @@ namespace RiotSharp.Endpoints.MatchEndpoint
         /// </summary>
         [JsonProperty("gameEndedInSurrender")]
         public bool GameEndedInSurrender { get; set; }
+
+        [JsonProperty("holdPings")]
+        public long HoldPings { get; set; }
+
+        [JsonProperty("getBackPings")]
+        public long GetBackPings { get; set; }
 
         /// <summary>
         /// Gold earned.
@@ -175,6 +203,9 @@ namespace RiotSharp.Endpoints.MatchEndpoint
         /// </summary>
         [JsonProperty("inhibitorKills")]
         public long InhibitorKills { get; set; }
+
+        [JsonProperty("inhibitorTakedowns")]
+        public long InhibitorTakedowns { get; set; }
 
         /// <summary>
         /// Numer of inhibitor kills.
@@ -292,17 +323,26 @@ namespace RiotSharp.Endpoints.MatchEndpoint
         [JsonProperty("magicDamageTaken")]
         public long MagicDamageTaken { get; set; }
 
+        [JsonProperty("missions")]
+        public ParticipantMissions Missions { get; set; }
+
         /// <summary>
         /// Neutral minions killed.
         /// </summary>
         [JsonProperty("neutralMinionsKilled")]
         public long NeutralMinionsKilled { get; set; }
 
+        [JsonProperty("needVisionPings")]
+        public long NeedVisionPings { get; set; }
+
         /// <summary>
         /// Numer of nexus kills.
         /// </summary>
         [JsonProperty("nexusKills")]
         public int NexusKills { get; set; }
+
+        [JsonProperty("nexusTakedowns")]
+        public int NexusTakedowns { get; set; }
 
         /// <summary>
         /// Numer of nexus kills.
@@ -322,11 +362,50 @@ namespace RiotSharp.Endpoints.MatchEndpoint
         [JsonProperty("objectivesStolenAssists")]
         public long ObjectivesStolenAssists { get; set; }
 
+        [JsonProperty("onMyWayPings")]
+        public long OnMyWayPings { get; set; }
+
         /// <summary>
         /// Participant ID.
         /// </summary>
         [JsonProperty("participantId")]
         public int ParticipantId { get; set; }
+
+        [JsonProperty("playerScore0")]
+        public int PlayerScore0 { get; set; }
+
+        [JsonProperty("playerScore1")]
+        public int PlayerScore1 { get; set; }
+
+        [JsonProperty("playerScore2")]
+        public int PlayerScore2 { get; set; }
+
+        [JsonProperty("playerScore3")]
+        public int PlayerScore3 { get; set; }
+
+        [JsonProperty("playerScore4")]
+        public int PlayerScore4 { get; set; }
+
+        [JsonProperty("playerScore5")]
+        public int PlayerScore5 { get; set; }
+
+        [JsonProperty("playerScore6")]
+        public int PlayerScore6 { get; set; }
+
+        [JsonProperty("playerScore7")]
+        public int PlayerScore7 { get; set; }
+
+        [JsonProperty("playerScore8")]
+        public int PlayerScore8 { get; set; }
+
+        [JsonProperty("playerScore9")]
+        public int PlayerScore9 { get; set; }
+
+        [JsonProperty("playerScore10")]
+        public int PlayerScore10 { get; set; }
+
+        [JsonProperty("playerScore11")]
+        public int PlayerScore11 { get; set; }
 
         /// <summary>
         /// Number of penta kills.
@@ -355,11 +434,29 @@ namespace RiotSharp.Endpoints.MatchEndpoint
         [JsonProperty("physicalDamageTaken")]
         public long PhysicalDamageTaken { get; set; }
 
-        /// <summary>
-        /// Id of the participants profil icon.
-        /// </summary>
-        [JsonProperty("profilIcon")]
-        public long ProfilIcon { get; set; }
+        [JsonProperty("placement")]
+        public int Placement { get; set; }
+
+        [JsonProperty("playerAugment1")]
+        public int PlayerAugment1 { get; set; }
+
+        [JsonProperty("playerAugment2")]
+        public int PlayerAugment2 { get; set; }
+
+        [JsonProperty("playerAugment3")]
+        public int PlayerAugment3 { get; set; }
+
+        [JsonProperty("playerAugment4")]
+        public int PlayerAugment4 { get; set; }
+
+        [JsonProperty("playerSubteamId")]
+        public int PlayerSubteamId { get; set; }
+
+        [JsonProperty("pushPings")]
+        public int PushPings { get; set; }
+
+        [JsonProperty("profileIcon")]
+        public int ProfileIcon { get; set; }
 
         /// <summary>
         /// Puuid.
@@ -372,6 +469,9 @@ namespace RiotSharp.Endpoints.MatchEndpoint
         /// </summary>
         [JsonProperty("quadraKills")]
         public long QuadraKills { get; set; }
+
+        [JsonProperty("riotIdGameName")]
+        public string RiotIdGameName { get; set; }
 
         /// <summary>
         /// Riot id name.
@@ -421,6 +521,9 @@ namespace RiotSharp.Endpoints.MatchEndpoint
         /// </summary>
         [JsonProperty("spell4Casts")]
         public long Spell4Casts { get; set; }
+
+        [JsonProperty("subteamPlacement")]
+        public long SubteamPlacement { get; set; }
 
         /// <summary>
         /// First summoner spell ID.
@@ -495,6 +598,9 @@ namespace RiotSharp.Endpoints.MatchEndpoint
         [JsonConverter(typeof(TimeSpanConverterFromSeconds))]
         public TimeSpan timePlayed { get; set; }
 
+        [JsonProperty("totalAllyJungleMinionsKilled")]
+        public long TotalAllyJungleMinionsKilled { get; set; }
+
         /// <summary>
         /// Total damage dealt.
         /// </summary>
@@ -512,6 +618,9 @@ namespace RiotSharp.Endpoints.MatchEndpoint
         /// </summary>
         [JsonProperty("totalDamageShieldedOnTeammates")]
         public long TotalDamageShieldedOnTeammates { get; set; }
+
+        [JsonProperty("totalEnemyJungleMinionsKilled")]
+        public long TotalEnemyJungleMinionsKilled { get; set; }
 
         /// <summary>
         /// Total damage taken.
@@ -586,6 +695,9 @@ namespace RiotSharp.Endpoints.MatchEndpoint
         [JsonProperty("turretKills")]
         public long TurretKills { get; set; }
 
+        [JsonProperty("turretTakedowns")]
+        public long TurretTakedowns { get; set; }
+
         /// <summary>
         /// Number of turrets lost.
         /// </summary>
@@ -603,6 +715,9 @@ namespace RiotSharp.Endpoints.MatchEndpoint
         /// </summary>
         [JsonProperty("visionScore")]
         public long VisionScore { get; set; }
+
+        [JsonProperty("visionClearedPings")]
+        public long VisionClearedPings { get; set; }
 
         /// <summary>
         /// Number of vision wards purchased.
