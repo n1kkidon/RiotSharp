@@ -6,441 +6,441 @@ namespace RiotSharp.Endpoints.MatchEndpoint
     public class ParticipantChallenges
     {
         [JsonProperty("12AssistStreakCount")]
-        public int AssistStreakCount { get; set; }
+        public long AssistStreakCount { get; set; }
 
         [JsonProperty("baronBuffGoldAdvantageOverThreshold")]
-        public int BaronBuffGoldAdvantageOverThreshold { get; set; }
+        public long BaronBuffGoldAdvantageOverThreshold { get; set; }
 
         [JsonProperty("controlWardTimeCoverageInRiverOrEnemyHalf")]
-        public float ControlWardTimeCoverageInRiverOrEnemyHalf { get; set; }
+        public double ControlWardTimeCoverageInRiverOrEnemyHalf { get; set; }
 
         [JsonProperty("earliestBaron")]
-        public int EarliestBaron { get; set; }
+        public double EarliestBaron { get; set; }
 
         [JsonProperty("earliestDragonTakedown")]
-        public int EarliestDragonTakedown { get; set; }
+        public double EarliestDragonTakedown { get; set; }
 
         [JsonProperty("earliestElderDragon")]
-        public int EarliestElderDragon { get; set; }
+        public long EarliestElderDragon { get; set; }
 
         [JsonProperty("earlyLaningPhaseGoldExpAdvantage")]
-        public int EarlyLaningPhaseGoldExpAdvantage { get; set; }
+        public long EarlyLaningPhaseGoldExpAdvantage { get; set; }
 
         [JsonProperty("fasterSupportQuestCompletion")]
-        public int FasterSupportQuestCompletion { get; set; }
+        public long FasterSupportQuestCompletion { get; set; }
 
         [JsonProperty("fastestLegendary")]
-        public int FastestLegendary { get; set; }
+        public long FastestLegendary { get; set; }
 
         [JsonProperty("hadAfkTeammate")]
-        public int HadAfkTeammate { get; set; }
+        public long HadAfkTeammate { get; set; }
 
         [JsonProperty("highestChampionDamage")]
-        public int HighestChampionDamage { get; set; }
+        public long HighestChampionDamage { get; set; }
 
         [JsonProperty("highestCrowdControlScore")]
-        public int HighestCrowdControlScore { get; set; }
+        public long HighestCrowdControlScore { get; set; }
 
         [JsonProperty("highestWardKills")]
-        public int HighestWardKills { get; set; }
+        public long HighestWardKills { get; set; }
 
         [JsonProperty("junglerKillsEarlyJungle")]
-        public int JunglerKillsEarlyJungle { get; set; }
+        public long JunglerKillsEarlyJungle { get; set; }
 
         [JsonProperty("killsOnLanersEarlyJungleAsJungler")]
-        public int KillsOnLanersEarlyJungleAsJungler { get; set; }
+        public long KillsOnLanersEarlyJungleAsJungler { get; set; }
 
         [JsonProperty("laningPhaseGoldExpAdvantage")]
-        public int LaningPhaseGoldExpAdvantage { get; set; }
+        public long LaningPhaseGoldExpAdvantage { get; set; }
 
         [JsonProperty("legendaryCount")]
-        public int LegendaryCount { get; set; }
+        public long LegendaryCount { get; set; }
 
         [JsonProperty("maxCsAdvantageOnLaneOpponent")]
-        public float MaxCsAdvantageOnLaneOpponent { get; set; }
+        public double MaxCsAdvantageOnLaneOpponent { get; set; }
 
         [JsonProperty("maxLevelLeadLaneOpponent")]
-        public int MaxLevelLeadLaneOpponent { get; set; }
+        public long MaxLevelLeadLaneOpponent { get; set; }
 
         [JsonProperty("mostWardsDestroyedOneSweeper")]
-        public int MostWardsDestroyedOneSweeper { get; set; }
+        public long MostWardsDestroyedOneSweeper { get; set; }
 
         [JsonProperty("mythicItemUsed")]
-        public int MythicItemUsed { get; set; }
+        public long MythicItemUsed { get; set; }
 
         [JsonProperty("playedChampSelectPosition")]
-        public int PlayedChampSelectPosition { get; set; }
+        public long PlayedChampSelectPosition { get; set; }
 
         [JsonProperty("soloTurretsLategame")]
-        public int SoloTurretsLategame { get; set; }
+        public long SoloTurretsLategame { get; set; }
 
         [JsonProperty("takedownsFirst25Minutes")]
-        public int TakedownsFirst25Minutes { get; set; }
+        public long TakedownsFirst25Minutes { get; set; }
 
         [JsonProperty("teleportTakedowns")]
-        public int TeleportTakedowns { get; set; }
+        public long TeleportTakedowns { get; set; }
 
         [JsonProperty("thirdInhibitorDestroyedTime")]
-        public int ThirdInhibitorDestroyedTime { get; set; }
+        public long ThirdInhibitorDestroyedTime { get; set; }
 
         [JsonProperty("threeWardsOneSweeperCount")]
-        public int ThreeWardsOneSweeperCount { get; set; }
+        public long ThreeWardsOneSweeperCount { get; set; }
 
         [JsonProperty("visionScoreAdvantageLaneOpponent")]
-        public float VisionScoreAdvantageLaneOpponent { get; set; }
+        public double VisionScoreAdvantageLaneOpponent { get; set; }
 
         [JsonProperty("InfernalScalePickup")]
-        public int InfernalScalePickup { get; set; }
+        public long InfernalScalePickup { get; set; }
 
         [JsonProperty("fistBumpParticipation")]
-        public int FistBumpParticipation { get; set; }
+        public long FistBumpParticipation { get; set; }
 
         [JsonProperty("voidMonsterKill")]
-        public int VoidMonsterKill { get; set; }
+        public long VoidMonsterKill { get; set; }
 
         [JsonProperty("abilityUses")]
-        public int AbilityUses { get; set; }
+        public long AbilityUses { get; set; }
 
         [JsonProperty("acesBefore15Minutes")]
-        public int AcesBefore15Minutes { get; set; }
+        public long AcesBefore15Minutes { get; set; }
 
         [JsonProperty("alliedJungleMonsterKills")]
-        public float AlliedJungleMonsterKills { get; set; }
+        public double AlliedJungleMonsterKills { get; set; }
 
         [JsonProperty("baronTakedowns")]
-        public int BaronTakedowns { get; set; }
+        public long BaronTakedowns { get; set; }
 
         [JsonProperty("blastConeOppositeOpponentCount")]
-        public int BlastConeOppositeOpponentCount { get; set; }
+        public long BlastConeOppositeOpponentCount { get; set; }
 
         [JsonProperty("bountyGold")]
-        public int BountyGold { get; set; }
+        public long BountyGold { get; set; }
 
         [JsonProperty("buffsStolen")]
-        public int BuffsStolen { get; set; }
+        public long BuffsStolen { get; set; }
 
         [JsonProperty("completeSupportQuestInTime")]
-        public int CompleteSupportQuestInTime { get; set; }
+        public long CompleteSupportQuestInTime { get; set; }
 
         [JsonProperty("controlWardsPlaced")]
-        public int ControlWardsPlaced { get; set; }
+        public long ControlWardsPlaced { get; set; }
 
         [JsonProperty("damagePerMinute")]
-        public float DamagePerMinute { get; set; }
+        public double DamagePerMinute { get; set; }
 
         [JsonProperty("damageTakenOnTeamPercentage")]
-        public float DamageTakenOnTeamPercentage { get; set; }
+        public double DamageTakenOnTeamPercentage { get; set; }
 
         [JsonProperty("dancedWithRiftHerald")]
-        public int DancedWithRiftHerald { get; set; }
+        public long DancedWithRiftHerald { get; set; }
 
         [JsonProperty("deathsByEnemyChamps")]
-        public int DeathsByEnemyChamps { get; set; }
+        public long DeathsByEnemyChamps { get; set; }
 
         [JsonProperty("dodgeSkillShotsSmallWindow")]
-        public int DodgeSkillShotsSmallWindow { get; set; }
+        public long DodgeSkillShotsSmallWindow { get; set; }
 
         [JsonProperty("doubleAces")]
-        public int DoubleAces { get; set; }
+        public long DoubleAces { get; set; }
 
         [JsonProperty("dragonTakedowns")]
-        public int DragonTakedowns { get; set; }
+        public long DragonTakedowns { get; set; }
 
         [JsonProperty("legendaryItemUsed")]
-        public List<int> LegendaryItemUsed { get; set; }
+        public List<long> LegendaryItemUsed { get; set; }
 
         [JsonProperty("effectiveHealAndShielding")]
-        public float EffectiveHealAndShielding { get; set; }
+        public double EffectiveHealAndShielding { get; set; }
 
         [JsonProperty("elderDragonKillsWithOpposingSoul")]
-        public int ElderDragonKillsWithOpposingSoul { get; set; }
+        public long ElderDragonKillsWithOpposingSoul { get; set; }
 
         [JsonProperty("elderDragonMultikills")]
-        public int ElderDragonMultikills { get; set; }
+        public long ElderDragonMultikills { get; set; }
 
         [JsonProperty("enemyChampionImmobilizations")]
-        public int EnemyChampionImmobilizations { get; set; }
+        public long EnemyChampionImmobilizations { get; set; }
 
         [JsonProperty("enemyJungleMonsterKills")]
-        public float EnemyJungleMonsterKills { get; set; }
+        public double EnemyJungleMonsterKills { get; set; }
 
         [JsonProperty("epicMonsterKillsNearEnemyJungler")]
-        public int EpicMonsterKillsNearEnemyJungler { get; set; }
+        public long EpicMonsterKillsNearEnemyJungler { get; set; }
 
         [JsonProperty("epicMonsterKillsWithin30SecondsOfSpawn")]
-        public int EpicMonsterKillsWithin30SecondsOfSpawn { get; set; }
+        public long EpicMonsterKillsWithin30SecondsOfSpawn { get; set; }
 
         [JsonProperty("epicMonsterSteals")]
-        public int EpicMonsterSteals { get; set; }
+        public long EpicMonsterSteals { get; set; }
 
         [JsonProperty("epicMonsterStolenWithoutSmite")]
-        public int EpicMonsterStolenWithoutSmite { get; set; }
+        public long EpicMonsterStolenWithoutSmite { get; set; }
 
         [JsonProperty("firstTurretKilled")]
-        public int FirstTurretKilled { get; set; }
+        public long FirstTurretKilled { get; set; }
 
         [JsonProperty("firstTurretKilledTime")]
-        public float FirstTurretKilledTime { get; set; }
+        public double FirstTurretKilledTime { get; set; }
 
         [JsonProperty("flawlessAces")]
-        public int FlawlessAces { get; set; }
+        public long FlawlessAces { get; set; }
 
         [JsonProperty("fullTeamTakedown")]
-        public int FullTeamTakedown { get; set; }
+        public long FullTeamTakedown { get; set; }
 
         [JsonProperty("gameLength")]
-        public float GameLength { get; set; }
+        public double GameLength { get; set; }
 
         [JsonProperty("getTakedownsInAllLanesEarlyJungleAsLaner")]
-        public int GetTakedownsInAllLanesEarlyJungleAsLaner { get; set; }
+        public long GetTakedownsInAllLanesEarlyJungleAsLaner { get; set; }
 
         [JsonProperty("goldPerMinute")]
-        public float GoldPerMinute { get; set; }
+        public double GoldPerMinute { get; set; }
 
         [JsonProperty("hadOpenNexus")]
-        public int HadOpenNexus { get; set; }
+        public long HadOpenNexus { get; set; }
 
         [JsonProperty("immobilizeAndKillWithAlly")]
-        public int ImmobilizeAndKillWithAlly { get; set; }
+        public long ImmobilizeAndKillWithAlly { get; set; }
 
         [JsonProperty("initialBuffCount")]
-        public int InitialBuffCount { get; set; }
+        public long InitialBuffCount { get; set; }
 
         [JsonProperty("initialCrabCount")]
-        public int InitialCrabCount { get; set; }
+        public long InitialCrabCount { get; set; }
 
         [JsonProperty("jungleCsBefore10Minutes")]
-        public float JungleCsBefore10Minutes { get; set; }
+        public double JungleCsBefore10Minutes { get; set; }
 
         [JsonProperty("junglerTakedownsNearDamagedEpicMonster")]
-        public int JunglerTakedownsNearDamagedEpicMonster { get; set; }
+        public long JunglerTakedownsNearDamagedEpicMonster { get; set; }
 
         [JsonProperty("kda")]
-        public float Kda { get; set; }
+        public double Kda { get; set; }
 
         [JsonProperty("killAfterHiddenWithAlly")]
-        public int KillAfterHiddenWithAlly { get; set; }
+        public long KillAfterHiddenWithAlly { get; set; }
 
         [JsonProperty("killedChampTookFullTeamDamageSurvived")]
-        public int KilledChampTookFullTeamDamageSurvived { get; set; }
+        public long KilledChampTookFullTeamDamageSurvived { get; set; }
 
         [JsonProperty("killingSprees")]
-        public int KillingSprees { get; set; }
+        public long KillingSprees { get; set; }
 
         [JsonProperty("killParticipation")]
-        public float KillParticipation { get; set; }
+        public double KillParticipation { get; set; }
 
         [JsonProperty("killsNearEnemyTurret")]
-        public int KillsNearEnemyTurret { get; set; }
+        public long KillsNearEnemyTurret { get; set; }
 
         [JsonProperty("killsOnOtherLanesEarlyJungleAsLaner")]
-        public int KillsOnOtherLanesEarlyJungleAsLaner { get; set; }
+        public long KillsOnOtherLanesEarlyJungleAsLaner { get; set; }
 
         [JsonProperty("killsOnRecentlyHealedByAramPack")]
-        public int KillsOnRecentlyHealedByAramPack { get; set; }
+        public long KillsOnRecentlyHealedByAramPack { get; set; }
 
         [JsonProperty("killsUnderOwnTurret")]
-        public int KillsUnderOwnTurret { get; set; }
+        public long KillsUnderOwnTurret { get; set; }
 
         [JsonProperty("killsWithHelpFromEpicMonster")]
-        public int KillsWithHelpFromEpicMonster { get; set; }
+        public long KillsWithHelpFromEpicMonster { get; set; }
 
         [JsonProperty("knockEnemyIntoTeamAndKill")]
-        public int KnockEnemyIntoTeamAndKill { get; set; }
+        public long KnockEnemyIntoTeamAndKill { get; set; }
 
         [JsonProperty("kTurretsDestroyedBeforePlatesFall")]
-        public int KTurretsDestroyedBeforePlatesFall { get; set; }
+        public long KTurretsDestroyedBeforePlatesFall { get; set; }
 
         [JsonProperty("landSkillShotsEarlyGame")]
-        public int LandSkillShotsEarlyGame { get; set; }
+        public long LandSkillShotsEarlyGame { get; set; }
 
         [JsonProperty("laneMinionsFirst10Minutes")]
-        public int LaneMinionsFirst10Minutes { get; set; }
+        public long LaneMinionsFirst10Minutes { get; set; }
 
         [JsonProperty("lostAnInhibitor")]
-        public int LostAnInhibitor { get; set; }
+        public long LostAnInhibitor { get; set; }
 
         [JsonProperty("maxKillDeficit")]
-        public int MaxKillDeficit { get; set; }
+        public long MaxKillDeficit { get; set; }
 
         [JsonProperty("mejaisFullStackInTime")]
-        public int MejaisFullStackInTime { get; set; }
+        public long MejaisFullStackInTime { get; set; }
 
         [JsonProperty("moreEnemyJungleThanOpponent")]
-        public float MoreEnemyJungleThanOpponent { get; set; }
+        public double MoreEnemyJungleThanOpponent { get; set; }
 
         [JsonProperty("multiKillOneSpell")]
-        public int MultiKillOneSpell { get; set; }
+        public long MultiKillOneSpell { get; set; }
 
         [JsonProperty("multikills")]
-        public int Multikills { get; set; }
+        public long Multikills { get; set; }
 
         [JsonProperty("multikillsAfterAggressiveFlash")]
-        public int MultikillsAfterAggressiveFlash { get; set; }
+        public long MultikillsAfterAggressiveFlash { get; set; }
 
         [JsonProperty("multiTurretRiftHeraldCount")]
-        public int MultiTurretRiftHeraldCount { get; set; }
+        public long MultiTurretRiftHeraldCount { get; set; }
 
         [JsonProperty("outerTurretExecutesBefore10Minutes")]
-        public int OuterTurretExecutesBefore10Minutes { get; set; }
+        public long OuterTurretExecutesBefore10Minutes { get; set; }
 
         [JsonProperty("outnumberedKills")]
-        public int OutnumberedKills { get; set; }
+        public long OutnumberedKills { get; set; }
 
         [JsonProperty("outnumberedNexusKill")]
-        public int OutnumberedNexusKill { get; set; }
+        public long OutnumberedNexusKill { get; set; }
 
         [JsonProperty("perfectDragonSoulsTaken")]
-        public int PerfectDragonSoulsTaken { get; set; }
+        public long PerfectDragonSoulsTaken { get; set; }
 
         [JsonProperty("perfectGame")]
-        public int PerfectGame { get; set; }
+        public long PerfectGame { get; set; }
 
         [JsonProperty("pickKillWithAlly")]
-        public int PickKillWithAlly { get; set; }
+        public long PickKillWithAlly { get; set; }
 
         [JsonProperty("poroExplosions")]
-        public int PoroExplosions { get; set; }
+        public long PoroExplosions { get; set; }
 
         [JsonProperty("quickCleanse")]
-        public int QuickCleanse { get; set; }
+        public long QuickCleanse { get; set; }
 
         [JsonProperty("quickFirstTurret")]
-        public int QuickFirstTurret { get; set; }
+        public long QuickFirstTurret { get; set; }
 
         [JsonProperty("quickSoloKills")]
-        public int QuickSoloKills { get; set; }
+        public long QuickSoloKills { get; set; }
 
         [JsonProperty("riftHeraldTakedowns")]
-        public int RiftHeraldTakedowns { get; set; }
+        public long RiftHeraldTakedowns { get; set; }
 
         [JsonProperty("saveAllyFromDeath")]
-        public int SaveAllyFromDeath { get; set; }
+        public long SaveAllyFromDeath { get; set; }
 
         [JsonProperty("scuttleCrabKills")]
-        public int ScuttleCrabKills { get; set; }
+        public long ScuttleCrabKills { get; set; }
 
         [JsonProperty("shortestTimeToAceFromFirstTakedown")]
-        public float ShortestTimeToAceFromFirstTakedown { get; set; }
+        public double ShortestTimeToAceFromFirstTakedown { get; set; }
 
         [JsonProperty("skillshotsDodged")]
-        public int SkillshotsDodged { get; set; }
+        public long SkillshotsDodged { get; set; }
 
         [JsonProperty("skillshotsHit")]
-        public int SkillshotsHit { get; set; }
+        public long SkillshotsHit { get; set; }
 
         [JsonProperty("snowballsHit")]
-        public int SnowballsHit { get; set; }
+        public long SnowballsHit { get; set; }
 
         [JsonProperty("soloBaronKills")]
-        public int SoloBaronKills { get; set; }
+        public long SoloBaronKills { get; set; }
 
         [JsonProperty("SWARM_DefeatAatrox")]
-        public int SWARMDefeatAatrox { get; set; }
+        public long SWARMDefeatAatrox { get; set; }
 
         [JsonProperty("SWARM_DefeatBriar")]
-        public int SWARMDefeatBriar { get; set; }
+        public long SWARMDefeatBriar { get; set; }
 
         [JsonProperty("SWARM_DefeatMiniBosses")]
-        public int SWARMDefeatMiniBosses { get; set; }
+        public long SWARMDefeatMiniBosses { get; set; }
 
         [JsonProperty("SWARM_EvolveWeapon")]
-        public int SWARMEvolveWeapon { get; set; }
+        public long SWARMEvolveWeapon { get; set; }
 
         [JsonProperty("SWARM_Have3Passives")]
-        public int SWARMHave3Passives { get; set; }
+        public long SWARMHave3Passives { get; set; }
 
         [JsonProperty("SWARM_KillEnemy")]
-        public int SWARMKillEnemy { get; set; }
+        public long SWARMKillEnemy { get; set; }
 
         [JsonProperty("SWARM_PickupGold")]
-        public float SWARMPickupGold { get; set; }
+        public double SWARMPickupGold { get; set; }
 
         [JsonProperty("SWARM_ReachLevel50")]
-        public int SWARMReachLevel50 { get; set; }
+        public long SWARMReachLevel50 { get; set; }
 
         [JsonProperty("SWARM_Survive15Min")]
-        public int SWARMSurvive15Min { get; set; }
+        public long SWARMSurvive15Min { get; set; }
 
         [JsonProperty("SWARM_WinWith5EvolvedWeapons")]
-        public int SWARMWinWith5EvolvedWeapons { get; set; }
+        public long SWARMWinWith5EvolvedWeapons { get; set; }
 
         [JsonProperty("soloKills")]
-        public int SoloKills { get; set; }
+        public long SoloKills { get; set; }
 
         [JsonProperty("stealthWardsPlaced")]
-        public int StealthWardsPlaced { get; set; }
+        public long StealthWardsPlaced { get; set; }
 
         [JsonProperty("survivedSingleDigitHpCount")]
-        public int SurvivedSingleDigitHpCount { get; set; }
+        public long SurvivedSingleDigitHpCount { get; set; }
 
         [JsonProperty("survivedThreeImmobilizesInFight")]
-        public int SurvivedThreeImmobilizesInFight { get; set; }
+        public long SurvivedThreeImmobilizesInFight { get; set; }
 
         [JsonProperty("takedownOnFirstTurret")]
-        public int TakedownOnFirstTurret { get; set; }
+        public long TakedownOnFirstTurret { get; set; }
 
         [JsonProperty("takedowns")]
-        public int Takedowns { get; set; }
+        public long Takedowns { get; set; }
 
         [JsonProperty("takedownsAfterGainingLevelAdvantage")]
-        public int TakedownsAfterGainingLevelAdvantage { get; set; }
+        public long TakedownsAfterGainingLevelAdvantage { get; set; }
 
         [JsonProperty("takedownsBeforeJungleMinionSpawn")]
-        public int TakedownsBeforeJungleMinionSpawn { get; set; }
+        public long TakedownsBeforeJungleMinionSpawn { get; set; }
 
         [JsonProperty("takedownsFirstXMinutes")]
-        public int TakedownsFirstXMinutes { get; set; }
+        public long TakedownsFirstXMinutes { get; set; }
 
         [JsonProperty("takedownsInAlcove")]
-        public int TakedownsInAlcove { get; set; }
+        public long TakedownsInAlcove { get; set; }
 
         [JsonProperty("takedownsInEnemyFountain")]
-        public int TakedownsInEnemyFountain { get; set; }
+        public long TakedownsInEnemyFountain { get; set; }
 
         [JsonProperty("teamBaronKills")]
-        public int TeamBaronKills { get; set; }
+        public long TeamBaronKills { get; set; }
 
         [JsonProperty("teamDamagePercentage")]
-        public float TeamDamagePercentage { get; set; }
+        public double TeamDamagePercentage { get; set; }
 
         [JsonProperty("teamElderDragonKills")]
-        public int TeamElderDragonKills { get; set; }
+        public long TeamElderDragonKills { get; set; }
 
         [JsonProperty("teamRiftHeraldKills")]
-        public int TeamRiftHeraldKills { get; set; }
+        public long TeamRiftHeraldKills { get; set; }
 
         [JsonProperty("tookLargeDamageSurvived")]
-        public int TookLargeDamageSurvived { get; set; }
+        public long TookLargeDamageSurvived { get; set; }
 
         [JsonProperty("turretPlatesTaken")]
-        public int TurretPlatesTaken { get; set; }
+        public long TurretPlatesTaken { get; set; }
 
         [JsonProperty("turretsTakenWithRiftHerald")]
-        public int TurretsTakenWithRiftHerald { get; set; }
+        public long TurretsTakenWithRiftHerald { get; set; }
 
         [JsonProperty("turretTakedowns")]
-        public int TurretTakedowns { get; set; }
+        public long TurretTakedowns { get; set; }
 
         [JsonProperty("twentyMinionsIn3SecondsCount")]
-        public int TwentyMinionsIn3SecondsCount { get; set; }
+        public long TwentyMinionsIn3SecondsCount { get; set; }
 
         [JsonProperty("twoWardsOneSweeperCount")]
-        public int TwoWardsOneSweeperCount { get; set; }
+        public long TwoWardsOneSweeperCount { get; set; }
 
         [JsonProperty("unseenRecalls")]
-        public int UnseenRecalls { get; set; }
+        public long UnseenRecalls { get; set; }
 
         [JsonProperty("visionScorePerMinute")]
-        public float VisionScorePerMinute { get; set; }
+        public double VisionScorePerMinute { get; set; }
 
         [JsonProperty("wardsGuarded")]
-        public int WardsGuarded { get; set; }
+        public long WardsGuarded { get; set; }
 
         [JsonProperty("wardTakedowns")]
-        public int WardTakedowns { get; set; }
+        public long WardTakedowns { get; set; }
 
         [JsonProperty("wardTakedownsBefore20M")]
-        public int WardTakedownsBefore20M { get; set; }
+        public long WardTakedownsBefore20M { get; set; }
     }
 }
