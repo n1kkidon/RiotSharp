@@ -3,7 +3,7 @@
   <PropertyGroup>
     <TargetFramework>netstandard1.3</TargetFramework>
     <PackageId>RiotSharp</PackageId>
-    <VersionPrefix>5.0.2</VersionPrefix>
+    <VersionPrefix>5.0.3</VersionPrefix>
     <VersionSuffix>alpha</VersionSuffix>
     <Authors>BenFradet</Authors>
     <Description>C# Wrapper for the Riot Games API</Description>

@@ -58,12 +58,6 @@ namespace RiotSharp.Endpoints.LeagueEndpoint
         public MiniSeries MiniSeries { get; set; }
 
         /// <summary>
-        /// The name of the the summoner represented by this entry.
-        /// </summary>
-        [JsonProperty("summonerName")]
-        public string SummonerName { get; set; }
-
-        /// <summary>
         /// The encrypted id of the the summoner represented by this entry.
         /// </summary>
         [JsonProperty("summonerId")]
