@@ -13,9 +13,9 @@ namespace RiotSharp.Endpoints.Interfaces
         /// Gets the current game by summoner ID asynchronously.
         /// </summary>
         /// <param name="region">Region where to retrieve the data.</param>
-        /// <param name="summonerId">ID of the summoner for which to retrieve current game.</param>
+        /// <param name="puuid">ID of the summoner for which to retrieve current game.</param>
         /// <returns>Current game of the summoner.</returns>
-        Task<CurrentGame> GetCurrentGameAsync(Region region, string summonerId);
+        Task<CurrentGame> GetCurrentGameAsync(Region region, string puuid);
 
         /// <summary>
         /// Gets the featured games by region asynchronously.

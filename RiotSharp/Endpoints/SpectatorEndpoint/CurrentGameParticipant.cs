@@ -43,12 +43,18 @@ namespace RiotSharp.Endpoints.SpectatorEndpoint
         /// </summary>
         [JsonProperty("summonerId")]
         public string SummonerId { get; set; }
-
+        
         /// <summary>
-        /// The summoner name of this participant
+        /// The puuid of this participant
         /// </summary>
-        [JsonProperty("summonerName")]
-        public string SummonerName { get; set; }
+        [JsonProperty("puuid")]
+        public string Puuid { get; set; }
+        
+        /// <summary>
+        /// The riot id of this participant
+        /// </summary>
+        [JsonProperty("riotId")]
+        public string RiotId { get; set; }
 
         /// <summary>
         /// The team ID of this participant, indicating the participant's team

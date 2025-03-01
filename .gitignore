@@ -8,3 +8,4 @@ TestResults/
 .vs/
 project.lock.json
 .vscode/
+*.DotSettings.user

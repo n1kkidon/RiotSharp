@@ -12,7 +12,7 @@ namespace RiotSharp.Endpoints.SpectatorEndpoint
     /// <seealso cref="RiotSharp.Endpoints.Interfaces.ISpectatorEndpoint" />
     public class SpectatorEndpoint : ISpectatorEndpoint
     {
-        private const string SpectatorRootUrl = "/lol/spectator/v4";
+        private const string SpectatorRootUrl = "/lol/spectator/v5";
         private const string CurrentGameUrl = "/active-games/by-summoner/{0}";
         private const string FeaturedGamesUrl = "/featured-games";
 
@@ -28,10 +28,10 @@ namespace RiotSharp.Endpoints.SpectatorEndpoint
         }
 
         /// <inheritdoc />
-        public async Task<CurrentGame> GetCurrentGameAsync(Region region, string summonerId)
+        public async Task<CurrentGame> GetCurrentGameAsync(Region region, string puuid)
         {
             var json = await _requester.CreateGetRequestAsync(
-                SpectatorRootUrl + string.Format(CurrentGameUrl, summonerId), region).ConfigureAwait(false);
+                SpectatorRootUrl + string.Format(CurrentGameUrl, puuid), region).ConfigureAwait(false);
             return JsonConvert.DeserializeObject<CurrentGame>(json);
         }
 
