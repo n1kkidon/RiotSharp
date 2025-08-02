@@ -140,7 +140,7 @@ namespace RiotSharp.Test
             {
                 // TODO: Properly implement encrypted SummonerId tests
                 return;
-                var leagues = Api.League.GetLeagueEntriesBySummonerAsync(RiotApiTestBase.SummonersPlatform, RiotApiTestBase.SummonerIds.FirstOrDefault());
+                var leagues = Api.League.GetLeagueEntriesByPuuidAsync(RiotApiTestBase.SummonersPlatform, RiotApiTestBase.SummonerIds.FirstOrDefault());
 
                 Assert.IsTrue(leagues.Result.Count > 0);
             });

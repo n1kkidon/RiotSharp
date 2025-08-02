@@ -38,11 +38,11 @@ namespace RiotSharp.Endpoints.Interfaces
         Task<List<LeagueEntry>> GetLeagueEntriesAsync(Region region, LeagueEndpoint.Enums.Division division, LeagueEndpoint.Enums.Tier tier, string rankedQueue, int page = 1);
 
         /// <summary>
-        /// Used to retrieve a list of <see cref="LeagueEntry"/> for the given <paramref name="encryptedSummonerId"/>.
+        /// Used to retrieve a list of <see cref="LeagueEntry"/> for the given <paramref name="puuid"/>.
         /// </summary>
         /// <param name="region">The region</param>
-        /// <param name="encryptedSummonerId">The encrypted summoner id</param>
-        Task<List<LeagueEntry>> GetLeagueEntriesBySummonerAsync(Region region, string encryptedSummonerId);
+        /// <param name="puuid">The encrypted puuid</param>
+        Task<List<LeagueEntry>> GetLeagueEntriesByPuuidAsync(Region region, string puuid);
 
         /// <summary>
         /// Used to retrieve information about the provided <paramref name="leagueId"/>.
